@@ -16,6 +16,8 @@
 		B1716C801651280300AC53B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C7F1651280300AC53B3 /* Default.png */; };
 		B1716C821651280300AC53B3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C811651280300AC53B3 /* Default@2x.png */; };
 		B1716C841651280300AC53B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C831651280300AC53B3 /* Default-568h@2x.png */; };
+		B1716C8B1651283B00AC53B3 /* test.css in Resources */ = {isa = PBXBuildFile; fileRef = B1716C8A1651283B00AC53B3 /* test.css */; };
+		B1716C9216512ABB00AC53B3 /* ESCSSParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		B1716C7F1651280300AC53B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B1716C811651280300AC53B3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B1716C831651280300AC53B3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B1716C8A1651283B00AC53B3 /* test.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = test.css; sourceTree = "<group>"; };
+		B1716C9016512ABB00AC53B3 /* ESCSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCSSParser.h; sourceTree = "<group>"; };
+		B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ESCSSParser.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,8 @@
 			children = (
 				B1716C7C1651280300AC53B3 /* ESAppDelegate.h */,
 				B1716C7D1651280300AC53B3 /* ESAppDelegate.m */,
+				B1716C9016512ABB00AC53B3 /* ESCSSParser.h */,
+				B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */,
 				B1716C741651280300AC53B3 /* Supporting Files */,
 			);
 			path = ESCSSParser;
@@ -95,6 +102,7 @@
 				B1716C7F1651280300AC53B3 /* Default.png */,
 				B1716C811651280300AC53B3 /* Default@2x.png */,
 				B1716C831651280300AC53B3 /* Default-568h@2x.png */,
+				B1716C8A1651283B00AC53B3 /* test.css */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 				B1716C801651280300AC53B3 /* Default.png in Resources */,
 				B1716C821651280300AC53B3 /* Default@2x.png in Resources */,
 				B1716C841651280300AC53B3 /* Default-568h@2x.png in Resources */,
+				B1716C8B1651283B00AC53B3 /* test.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 			files = (
 				B1716C7A1651280300AC53B3 /* main.m in Sources */,
 				B1716C7E1651280300AC53B3 /* ESAppDelegate.m in Sources */,
+				B1716C9216512ABB00AC53B3 /* ESCSSParser.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

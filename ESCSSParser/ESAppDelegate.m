@@ -7,6 +7,7 @@
 //
 
 #import "ESAppDelegate.h"
+#import "ESCSSParser.h"
 
 @implementation ESAppDelegate
 
@@ -20,6 +21,14 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"css"];
+    NSString *cssText = [[[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] autorelease];
+    
+    ESCSSParser *parser = [[[ESCSSParser alloc] init] autorelease];
+    NSDictionary *styleSheet = [parser parse:cssText];
+    NSLog(@"styleSheet:%@",styleSheet);
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

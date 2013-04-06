@@ -2,8 +2,8 @@
 //  main.m
 //  ESCSSParser
 //
-//  Created by Tracy E on 12-11-12.
-//  Copyright (c) 2012年 Tracy E. All rights reserved.
+//  Created by Tracy E(tracy.cpp@gmail.com) on 12-11-12.
+//  Copyright (c) 2012年 Esoft Mobile(www.esoftmobile.com). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -12,7 +12,7 @@
 		B1716C721651280300AC53B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1716C711651280300AC53B3 /* CoreGraphics.framework */; };
 		B1716C781651280300AC53B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1716C761651280300AC53B3 /* InfoPlist.strings */; };
 		B1716C7A1651280300AC53B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1716C791651280300AC53B3 /* main.m */; };
-		B1716C7E1651280300AC53B3 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1716C7D1651280300AC53B3 /* ESAppDelegate.m */; };
+		B1716C7E1651280300AC53B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1716C7D1651280300AC53B3 /* AppDelegate.m */; };
 		B1716C801651280300AC53B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C7F1651280300AC53B3 /* Default.png */; };
 		B1716C821651280300AC53B3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C811651280300AC53B3 /* Default@2x.png */; };
 		B1716C841651280300AC53B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C831651280300AC53B3 /* Default-568h@2x.png */; };
@@ -29,8 +29,8 @@
 		B1716C771651280300AC53B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1716C791651280300AC53B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1716C7B1651280300AC53B3 /* ESCSSParser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESCSSParser-Prefix.pch"; sourceTree = "<group>"; };
-		B1716C7C1651280300AC53B3 /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
-		B1716C7D1651280300AC53B3 /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
+		B1716C7C1651280300AC53B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1716C7D1651280300AC53B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B1716C7F1651280300AC53B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B1716C811651280300AC53B3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B1716C831651280300AC53B3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		B1716C731651280300AC53B3 /* ESCSSParser */ = {
 			isa = PBXGroup;
 			children = (
-				B1716C7C1651280300AC53B3 /* ESAppDelegate.h */,
-				B1716C7D1651280300AC53B3 /* ESAppDelegate.m */,
+				B1716C7C1651280300AC53B3 /* AppDelegate.h */,
+				B1716C7D1651280300AC53B3 /* AppDelegate.m */,
 				B1716C9016512ABB00AC53B3 /* ESCSSParser.h */,
 				B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */,
 				B1716C741651280300AC53B3 /* Supporting Files */,
@@ -175,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1716C7A1651280300AC53B3 /* main.m in Sources */,
-				B1716C7E1651280300AC53B3 /* ESAppDelegate.m in Sources */,
+				B1716C7E1651280300AC53B3 /* AppDelegate.m in Sources */,
 				B1716C9216512ABB00AC53B3 /* ESCSSParser.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +247,7 @@
 		B1716C881651280300AC53B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESCSSParser/ESCSSParser-Prefix.pch";
 				INFOPLIST_FILE = "ESCSSParser/ESCSSParser-Info.plist";
@@ -258,6 +259,7 @@
 		B1716C891651280300AC53B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESCSSParser/ESCSSParser-Prefix.pch";
 				INFOPLIST_FILE = "ESCSSParser/ESCSSParser-Info.plist";
@@ -285,6 +287,7 @@
 				B1716C891651280300AC53B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

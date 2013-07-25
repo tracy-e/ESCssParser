@@ -2,8 +2,8 @@
 //  ESCSSParser.m
 //  ESCSSParser
 //
-//  Created by Tracy E(tracy.cpp@gmail.com) on 12-11-12.
-//  Copyright (c) 2012年 Esoft Mobile(www.esoftmobile.com). All rights reserved.
+//  Created by TracyYih(tracy.cpp@gmail.com) on 12-11-12.
+//  Copyright (c) 2012 EsoftMobile.com. All rights reserved.
 //
 
 #import "ESCSSParser.h"
@@ -194,7 +194,7 @@ static bool is_token(string& istring,const int i){
 }
 
 static NSString* stringForm(string string){
-    return [NSString stringWithCString:string.c_str() encoding:NSUTF8StringEncoding];
+    return @(string.c_str());
 }
 
 
@@ -254,7 +254,7 @@ static NSString* stringForm(string string){
                         cur_selector = trim(cur_selector);
                         cur_selector = trimspaces(cur_selector);
                         
-                        properties = [[[NSMutableDictionary alloc] init] autorelease];
+                        properties = [[NSMutableDictionary alloc] init];
                     }
                     else if(css_input[i] == '}')
                     {
@@ -264,7 +264,7 @@ static NSString* stringForm(string string){
                             cur_keyframes = str_replace("-webkit-", "", cur_keyframes);
                             cur_keyframes = trimspaces(cur_keyframes);
                             
-                            [styleSheet setObject:keyframeRule forKey:stringForm(cur_keyframes)];
+                            styleSheet[stringForm(cur_keyframes)] = keyframeRule;
                             cur_keyframes = "";
                         }
                         cur_selector = "";
@@ -311,14 +311,14 @@ static NSString* stringForm(string string){
                     else if(css_input[i] == '}')
                     {
                         if (in_keyframes) {
-                            [keyframeRule setObject:properties forKey:stringForm(cur_selector)];
+                            keyframeRule[stringForm(cur_selector)] = properties;
                         }else{
                             NSString *selector = stringForm(cur_selector);
-                            if ([styleSheet objectForKey:selector]) {
-                                NSMutableDictionary *preRule = [styleSheet objectForKey:selector];
+                            if (styleSheet[selector]) {
+                                NSMutableDictionary *preRule = styleSheet[selector];
                                 [preRule addEntriesFromDictionary:properties];
                             }else{
-                                [styleSheet setObject:properties forKey:selector];
+                                styleSheet[selector] = properties;
                             }
                         }
                         
@@ -444,7 +444,7 @@ static NSString* stringForm(string string){
                 if (css_input[i] == '{') {
                     status = in_selector;
                     in_keyframes = true;
-                    keyframeRule = [[[NSMutableDictionary alloc] init] autorelease];
+                    keyframeRule = [[NSMutableDictionary alloc] init];
                     
                 }else if(css_input[i] == ';'){
                     status = in_selector;
@@ -469,7 +469,7 @@ static NSString* stringForm(string string){
                 break;
 		}
 	}    
-    return [styleSheet autorelease];
+    return styleSheet;
 }
 
 

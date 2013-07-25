@@ -2,8 +2,8 @@
 //  ESCSSParser.h
 //  ESCSSParser
 //
-//  Created by Tracy E(tracy.cpp@gmail.com) on 12-11-12.
-//  Copyright (c) 2012年 Esoft Mobile(www.esoftmobile.com). All rights reserved.
+//  Created by TracyYih(tracy.cpp@gmail.com) on 12-11-12.
+//  Copyright (c) 2012 EsoftMobile.com. All rights reserved.
 //
 
 @interface ESCSSParser : NSObject{}

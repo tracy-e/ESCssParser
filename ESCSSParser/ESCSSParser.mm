@@ -371,14 +371,13 @@ static NSString* stringForm(string string){
                     if( (css_input[i] == '}' || css_input[i] == ';' || pn) && !cur_selector.empty())
                     {
                         cur_sub_value = trimspaces(cur_sub_value);
-                        
-                        NSString *propertyName = stringForm(cur_property);
-                        NSString *propertyValue = stringForm(cur_sub_value);
-                        [properties setValue:propertyValue forKey:propertyName];
-                        
                         cur_selector = trim(cur_selector);
                         cur_property = trim(cur_property);
                         cur_sub_value = trim(cur_sub_value);
+
+                        NSString *propertyName = stringForm(cur_property);
+                        NSString *propertyValue = stringForm(cur_sub_value);
+                        [properties setValue:propertyValue forKey:propertyName];
                         
                         if(cur_sub_value != "")
                         {

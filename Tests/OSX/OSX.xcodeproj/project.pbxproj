@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B157ABEE17C9081700DBC345 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B157ABED17C9081700DBC345 /* Cocoa.framework */; };
+		B157ABF817C9081700DBC345 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B157ABF617C9081700DBC345 /* InfoPlist.strings */; };
+		B157ABFA17C9081700DBC345 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B157ABF917C9081700DBC345 /* main.m */; };
+		B157ABFE17C9081700DBC345 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B157ABFC17C9081700DBC345 /* Credits.rtf */; };
+		B157AC0117C9081700DBC345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B157AC0017C9081700DBC345 /* AppDelegate.m */; };
+		B157AC0417C9081700DBC345 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B157AC0217C9081700DBC345 /* MainMenu.xib */; };
+		B157AC0617C9081700DBC345 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B157AC0517C9081700DBC345 /* Images.xcassets */; };
+		B157AC0D17C9081700DBC345 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B157AC0C17C9081700DBC345 /* XCTest.framework */; };
+		B157AC0E17C9081700DBC345 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B157ABED17C9081700DBC345 /* Cocoa.framework */; };
+		B157AC1617C9081700DBC345 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B157AC1417C9081700DBC345 /* InfoPlist.strings */; };
+		B157AC1817C9081700DBC345 /* OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B157AC1717C9081700DBC345 /* OSXTests.m */; };
+		B157AC3217C9085A00DBC345 /* test.css in Resources */ = {isa = PBXBuildFile; fileRef = B157AC3117C9085A00DBC345 /* test.css */; };
+		B157AC4217C908EB00DBC345 /* ESCssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B157AC3E17C908EB00DBC345 /* ESCssParser.m */; };
+		B157AC4317C908EC00DBC345 /* ESCssTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B157AC3F17C908EB00DBC345 /* ESCssTokenizer.m */; };
+		B157AC4417C908EC00DBC345 /* ESCssTokens.m in Sources */ = {isa = PBXBuildFile; fileRef = B157AC4117C908EB00DBC345 /* ESCssTokens.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B157AC0F17C9081700DBC345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B157ABE217C9081700DBC345 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B157ABE917C9081700DBC345;
+			remoteInfo = OSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B157ABEA17C9081700DBC345 /* OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B157ABED17C9081700DBC345 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B157ABF017C9081700DBC345 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B157ABF117C9081700DBC345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B157ABF217C9081700DBC345 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B157ABF517C9081700DBC345 /* OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
+		B157ABF717C9081700DBC345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B157ABF917C9081700DBC345 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B157ABFB17C9081700DBC345 /* OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSX-Prefix.pch"; sourceTree = "<group>"; };
+		B157ABFD17C9081700DBC345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B157ABFF17C9081700DBC345 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B157AC0017C9081700DBC345 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B157AC0317C9081700DBC345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B157AC0517C9081700DBC345 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B157AC0B17C9081700DBC345 /* OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B157AC0C17C9081700DBC345 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B157AC1317C9081700DBC345 /* OSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSXTests-Info.plist"; sourceTree = "<group>"; };
+		B157AC1517C9081700DBC345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B157AC1717C9081700DBC345 /* OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSXTests.m; sourceTree = "<group>"; };
+		B157AC3117C9085A00DBC345 /* test.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = test.css; path = ../../../test.css; sourceTree = "<group>"; };
+		B157AC3D17C908EB00DBC345 /* ESCssParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCssParser.h; sourceTree = "<group>"; };
+		B157AC3E17C908EB00DBC345 /* ESCssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESCssParser.m; sourceTree = "<group>"; };
+		B157AC3F17C908EB00DBC345 /* ESCssTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESCssTokenizer.m; sourceTree = "<group>"; };
+		B157AC4017C908EB00DBC345 /* ESCssTokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCssTokens.h; sourceTree = "<group>"; };
+		B157AC4117C908EB00DBC345 /* ESCssTokens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESCssTokens.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B157ABE717C9081700DBC345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157ABEE17C9081700DBC345 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B157AC0817C9081700DBC345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157AC0E17C9081700DBC345 /* Cocoa.framework in Frameworks */,
+				B157AC0D17C9081700DBC345 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B157ABE117C9081700DBC345 = {
+			isa = PBXGroup;
+			children = (
+				B157ABF317C9081700DBC345 /* OSX */,
+				B157AC1117C9081700DBC345 /* OSXTests */,
+				B157ABEC17C9081700DBC345 /* Frameworks */,
+				B157ABEB17C9081700DBC345 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B157ABEB17C9081700DBC345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B157ABEA17C9081700DBC345 /* OSX.app */,
+				B157AC0B17C9081700DBC345 /* OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B157ABEC17C9081700DBC345 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B157ABED17C9081700DBC345 /* Cocoa.framework */,
+				B157AC0C17C9081700DBC345 /* XCTest.framework */,
+				B157ABEF17C9081700DBC345 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B157ABEF17C9081700DBC345 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B157ABF017C9081700DBC345 /* AppKit.framework */,
+				B157ABF117C9081700DBC345 /* CoreData.framework */,
+				B157ABF217C9081700DBC345 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B157ABF317C9081700DBC345 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				B157ABFF17C9081700DBC345 /* AppDelegate.h */,
+				B157AC0017C9081700DBC345 /* AppDelegate.m */,
+				B157AC3C17C908EB00DBC345 /* Parser */,
+				B157AC0217C9081700DBC345 /* MainMenu.xib */,
+				B157AC0517C9081700DBC345 /* Images.xcassets */,
+				B157ABF417C9081700DBC345 /* Supporting Files */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
+		B157ABF417C9081700DBC345 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B157AC3117C9085A00DBC345 /* test.css */,
+				B157ABF517C9081700DBC345 /* OSX-Info.plist */,
+				B157ABF617C9081700DBC345 /* InfoPlist.strings */,
+				B157ABF917C9081700DBC345 /* main.m */,
+				B157ABFB17C9081700DBC345 /* OSX-Prefix.pch */,
+				B157ABFC17C9081700DBC345 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B157AC1117C9081700DBC345 /* OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				B157AC1717C9081700DBC345 /* OSXTests.m */,
+				B157AC1217C9081700DBC345 /* Supporting Files */,
+			);
+			path = OSXTests;
+			sourceTree = "<group>";
+		};
+		B157AC1217C9081700DBC345 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B157AC1317C9081700DBC345 /* OSXTests-Info.plist */,
+				B157AC1417C9081700DBC345 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B157AC3C17C908EB00DBC345 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				B157AC3D17C908EB00DBC345 /* ESCssParser.h */,
+				B157AC3E17C908EB00DBC345 /* ESCssParser.m */,
+				B157AC3F17C908EB00DBC345 /* ESCssTokenizer.m */,
+				B157AC4017C908EB00DBC345 /* ESCssTokens.h */,
+				B157AC4117C908EB00DBC345 /* ESCssTokens.m */,
+			);
+			name = Parser;
+			path = ../../../ESCssParser/Parser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B157ABE917C9081700DBC345 /* OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B157AC1B17C9081700DBC345 /* Build configuration list for PBXNativeTarget "OSX" */;
+			buildPhases = (
+				B157ABE617C9081700DBC345 /* Sources */,
+				B157ABE717C9081700DBC345 /* Frameworks */,
+				B157ABE817C9081700DBC345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSX;
+			productName = OSX;
+			productReference = B157ABEA17C9081700DBC345 /* OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B157AC0A17C9081700DBC345 /* OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B157AC1E17C9081700DBC345 /* Build configuration list for PBXNativeTarget "OSXTests" */;
+			buildPhases = (
+				B157AC0717C9081700DBC345 /* Sources */,
+				B157AC0817C9081700DBC345 /* Frameworks */,
+				B157AC0917C9081700DBC345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B157AC1017C9081700DBC345 /* PBXTargetDependency */,
+			);
+			name = OSXTests;
+			productName = OSXTests;
+			productReference = B157AC0B17C9081700DBC345 /* OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B157ABE217C9081700DBC345 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = TracyYih;
+				TargetAttributes = {
+					B157AC0A17C9081700DBC345 = {
+						TestTargetID = B157ABE917C9081700DBC345;
+					};
+				};
+			};
+			buildConfigurationList = B157ABE517C9081700DBC345 /* Build configuration list for PBXProject "OSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B157ABE117C9081700DBC345;
+			productRefGroup = B157ABEB17C9081700DBC345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B157ABE917C9081700DBC345 /* OSX */,
+				B157AC0A17C9081700DBC345 /* OSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B157ABE817C9081700DBC345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157ABF817C9081700DBC345 /* InfoPlist.strings in Resources */,
+				B157AC3217C9085A00DBC345 /* test.css in Resources */,
+				B157AC0617C9081700DBC345 /* Images.xcassets in Resources */,
+				B157ABFE17C9081700DBC345 /* Credits.rtf in Resources */,
+				B157AC0417C9081700DBC345 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B157AC0917C9081700DBC345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157AC1617C9081700DBC345 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B157ABE617C9081700DBC345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157AC0117C9081700DBC345 /* AppDelegate.m in Sources */,
+				B157AC4417C908EC00DBC345 /* ESCssTokens.m in Sources */,
+				B157ABFA17C9081700DBC345 /* main.m in Sources */,
+				B157AC4217C908EB00DBC345 /* ESCssParser.m in Sources */,
+				B157AC4317C908EC00DBC345 /* ESCssTokenizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B157AC0717C9081700DBC345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157AC1817C9081700DBC345 /* OSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B157AC1017C9081700DBC345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B157ABE917C9081700DBC345 /* OSX */;
+			targetProxy = B157AC0F17C9081700DBC345 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B157ABF617C9081700DBC345 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B157ABF717C9081700DBC345 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B157ABFC17C9081700DBC345 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B157ABFD17C9081700DBC345 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B157AC0217C9081700DBC345 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B157AC0317C9081700DBC345 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B157AC1417C9081700DBC345 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B157AC1517C9081700DBC345 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B157AC1917C9081700DBC345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B157AC1A17C9081700DBC345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B157AC1C17C9081700DBC345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSX/OSX-Prefix.pch";
+				INFOPLIST_FILE = "OSX/OSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B157AC1D17C9081700DBC345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSX/OSX-Prefix.pch";
+				INFOPLIST_FILE = "OSX/OSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B157AC1F17C9081700DBC345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSX.app/Contents/MacOS/OSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSX/OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OSXTests/OSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B157AC2017C9081700DBC345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSX.app/Contents/MacOS/OSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSX/OSX-Prefix.pch";
+				INFOPLIST_FILE = "OSXTests/OSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B157ABE517C9081700DBC345 /* Build configuration list for PBXProject "OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B157AC1917C9081700DBC345 /* Debug */,
+				B157AC1A17C9081700DBC345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B157AC1B17C9081700DBC345 /* Build configuration list for PBXNativeTarget "OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B157AC1C17C9081700DBC345 /* Debug */,
+				B157AC1D17C9081700DBC345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B157AC1E17C9081700DBC345 /* Build configuration list for PBXNativeTarget "OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B157AC1F17C9081700DBC345 /* Debug */,
+				B157AC2017C9081700DBC345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B157ABE217C9081700DBC345 /* Project object */;
+}

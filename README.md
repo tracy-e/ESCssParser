@@ -1,7 +1,7 @@
-ESCSSParser
+ESCssParser
 ===========
 
-ESCSSParser is a css parser for Objective-C. you can use it to parser some simple CSS to NSDictionary.
+ESCssParser is a css parser for Objective-C. you can use it to parser some simple CSS to NSDictionary.
 
 ##Example
 ###css file:
@@ -41,24 +41,39 @@ div{
 }
 
 ```
+
 ###how to use:
+
 ```objective-c
-ESCSSParser *parser = [[[ESCSSParser alloc] init] autorelease];
-NSDictionary *styleSheet = [parser parse:cssText];
-NSLog(@"styleSheet:%@",styleSheet);
+ESCssParser *parser = [[ESCssParser alloc] init];
+NSDictionary *styleSheet = [parser parseText:cssText];
+NSLog(@"styleSheet: %@", styleSheet);
 ```
+
 ###result:
 ```log
-styleSheet:{
+styleSheet: {
     "#idSelector" =     {
         "background-image" = "url(../images/someImg.png)";
         height = 150px;
         width = 200px;
     };
     "*" =     {
-        color = "rgb(200,200,200)";
+        color = "rgb(200, 200, 200)";
         "font-size" = 17px;
         margin = "5px 10px";
+    };
+    "-webkit-keyframes myAnimation" =     {
+        from =         {
+            "background-color" = red;
+            height = 400px;
+            width = 500px;
+        };
+        to =         {
+            "background-color" = "#fff";
+            height = 200px;
+            width = 300px;
+        };
     };
     ".classSelector" =     {
         "-webkit-animation-duration" = 3s;
@@ -75,18 +90,5 @@ styleSheet:{
         "padding-top" = 10px;
         "text-align" = center;
     };
-    "keyframes myAnimation" =     {
-        from =         {
-            "background-color" = red;
-            height = 400px;
-            width = 500px;
-        };
-        to =         {
-            "background-color" = "#fff";
-            height = 200px;
-            width = 300px;
-        };
-    };
 }
-
 ```

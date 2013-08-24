@@ -1,0 +1,33 @@
+/*this file is just for test*/
+@charset "utf-8";
+
+*{ margin:5px 10px; font-size:17px; color:rgb(200,200,200); }
+
+#idSelector{
+    background-image:url(../images/someImg.png);
+    width:200px;
+    height:150px;
+}
+
+.classSelector{
+    display: black;
+    border-width: 5px;
+    border-color: #ababab;
+    border-radius: 8px;
+
+    -webkit-animation-name: myAnimation;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:3;
+}
+
+@-webkit-keyframes myAnimation{
+    from{ width:500px; height:400px; background-color:red;}
+    to{width:300px; height:200px; background-color:#fff;}
+}
+
+div{
+    padding-left:5px;
+    padding-top:10px;
+    text-align:center;
+}

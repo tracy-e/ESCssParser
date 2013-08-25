@@ -3,7 +3,14 @@ ESCssParser
 
 ESCssParser is a css parser for Objective-C. you can use it to parser some simple CSS to NSDictionary.
 
-##Example
+###how to use:
+
+```objective-c
+ESCssParser *parser = [[ESCssParser alloc] init];
+NSDictionary *styleSheet = [parser parseText:cssText];
+NSLog(@"styleSheet: %@", styleSheet);
+```
+
 ###css file:
 ```css
 /*this file is just for test*/
@@ -40,14 +47,6 @@ div{
     text-align:center;
 }
 
-```
-
-###how to use:
-
-```objective-c
-ESCssParser *parser = [[ESCssParser alloc] init];
-NSDictionary *styleSheet = [parser parseText:cssText];
-NSLog(@"styleSheet: %@", styleSheet);
 ```
 
 ###result:

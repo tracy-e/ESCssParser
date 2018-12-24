@@ -149,13 +149,13 @@ void css_scan(const char *text, int token) {
                 case '}':
                     if (_state.type == RuleTypeStyle) {
                         _state.flag = InsideStyleSheet;
-                        _styleSheet[_activeSelector] = _activeRuleSet;
+                        [self mergeStyleSheetFields:_activeRuleSet forProperty:_activeSelector];
                         _activeSelector = [[NSMutableString alloc] init];
                     } else if (_state.type == RuleTypeKeyframes) {
                         if (_state.flag == InsideKeyframes) {
                             _state.type = RuleTypeStyle;
                             _state.flag = InsideStyleSheet;
-                            _styleSheet[_activeKeyframesName] = _activeKeyframes;
+                            [self mergeStyleSheetFields:_activeKeyframes forProperty:_activeKeyframesName];
                         } else if (_state.flag == InsideRuleSet) {
                             _state.flag = InsideKeyframes;
                             _activeKeyframes[_activeSelector] = _activeRuleSet;
@@ -232,6 +232,17 @@ void css_scan(const char *text, int token) {
     __currentParser = self;
     css_parse([cssText UTF8String]);
     return _styleSheet;
+}
+
+- (void)mergeStyleSheetFields:(id)fields forProperty:(id)property {
+    NSMutableDictionary *existFields = _styleSheet[property];
+    if ([existFields isKindOfClass:NSDictionary.class] && [fields isKindOfClass:NSDictionary.class]) {
+        existFields = existFields.mutableCopy;
+        [existFields addEntriesFromDictionary:(NSDictionary *)fields];
+        fields = existFields;
+    }
+
+    _styleSheet[property] = fields;
 }
 
 @end
